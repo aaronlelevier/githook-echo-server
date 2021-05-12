@@ -1,6 +1,6 @@
 # Readme
 
-Commands so far:
+Commands to start [ngrok](https://ngrok.com/) and tunnel to a local [Flask](https://flask.palletsprojects.com) app:
 
 ```bash
 # start ngrok

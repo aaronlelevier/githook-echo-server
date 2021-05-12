@@ -1,13 +1,12 @@
-from flask import Flask, request
 from logzero import logger
-
+from github_webhook import Webhook
+from flask import Flask
 
 app = Flask(__name__)
+webhook = Webhook(app, endpoint="/pull-request")
 
-@app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
 
-@app.route('/post/', methods=['POST'])
-def show_post():
-    return request.json
+@webhook.hook(event_type="pull_request")
+def pull_request(data):
+    logger.info("%s", data)
+    return data
