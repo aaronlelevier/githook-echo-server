@@ -10,5 +10,6 @@ def hello_world():
 
 @app.route('/post/', methods=['POST'])
 def show_post():
-    logger.info('%s', request.json)
+    logger.info('vars: %s', vars(request))
+    logger.info('json: %s', request.json)
     return request.json
