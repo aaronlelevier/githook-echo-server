@@ -8,6 +8,5 @@ webhook = Webhook(app, endpoint="/pull-request")
 
 @webhook.hook(event_type="pull_request")
 def pull_request(data):
-    logger.info("Got push with: %s", data)
-    print("Got push with: {}".format(data))
+    logger.info("%s", data)
     return data
