@@ -10,5 +10,6 @@ def hello_world():
 
 @webhook.hook()        # Defines a handler for the 'push' event
 def on_push(data):
-    logger.info("Got push with: %s".format(data))
+    logger.info("Got push with: %s", data)
+    print("Got push with: {}".format(data))
     return data
