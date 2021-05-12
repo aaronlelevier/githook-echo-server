@@ -13,5 +13,4 @@ def hello_world():
 def on_push(data):
     logger.info("Got push with: %s", data)
     print("Got push with: {}".format(data))
-
     return data
