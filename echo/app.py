@@ -1,3 +1,4 @@
+from logzero import logger
 from github_webhook import Webhook
 from flask import Flask
 
@@ -12,4 +13,5 @@ def hello_world():
 def on_push(data):
     logger.info("Got push with: %s", data)
     print("Got push with: {}".format(data))
+
     return data
