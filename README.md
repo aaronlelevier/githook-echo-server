@@ -10,6 +10,10 @@ Commands to start [ngrok](https://ngrok.com/) and tunnel to a local [Flask](http
 # start ngrok
 ngrok http 5000
 
+# activate virtualenv
+
+# cd to flask app.py dir
+
 # start flask server
 python -m flask run
 ```
