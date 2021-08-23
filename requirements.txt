@@ -2,6 +2,11 @@
 flask
 github-webhook
 logzero
+boto3
+requests
+
+# test
+pretend
 
 # dev
 jupyter
