@@ -61,3 +61,4 @@ Some future things would be:
 - [ ] Move filtering logic of what files to sync to a config file
 - [ ] Allow a S3 key prefix to be used for where to store the files in the S3 bucket
 - [ ] Productionalize
+- [ ] Github token should be fetched from a secret vault
